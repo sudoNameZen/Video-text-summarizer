@@ -1,16 +1,27 @@
-import About from "@/Components/About";
-import Footer from "@/Components/Footer";
-import MediaUploader from "@/Components/MediaUploader";
-import Navbar from "@/Components/Navbar";
+'use client';
+import dynamic from 'next/dynamic';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
+// Dynamically import MediaUploader with no SSR
+const MediaUploader = dynamic(() => import('@/components/MediaUploader'), {
+  ssr: false,
+  loading: () => <div className="text-center py-12">Loading media uploader...</div>
+});
+
+const metadata = {
+  title: 'LightScript - Video to Text Summaries',
+  description: 'Upload videos and get concise text summaries instantly',
+};
 
 export default function Home() {
   return (
-   <>
-  <Navbar/>
-   <About/>
-   <MediaUploader/>
-   <Footer/>
-   </>
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow">
+        <MediaUploader />
+      </main>
+      <Footer />
+    </div>
   );
 }
