@@ -8,8 +8,8 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
-  { name: 'Pricing', href: '/pricing' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Pricing', href: '/Pricing' },
+  { name: 'Contact', href: '/Contact' },
 ];
 
 export default function Navbar() {

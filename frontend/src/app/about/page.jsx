@@ -1,5 +1,14 @@
-import ProcessCard from '@/components/ProcessCard';
-import { LightningBoltIcon, SpeakerphoneIcon, DocumentTextIcon, SparklesIcon } from '@heroicons/react/outline';
+import React from 'react';
+import ProcessCard from '@/Components/ProcessCard';
+
+
+import {
+  BoltIcon,
+  SpeakerWaveIcon,
+  DocumentTextIcon,
+  SparklesIcon
+} from '@heroicons/react/24/outline';
+
 
 export const metadata = {
   title: 'About LightScript - Video to Text Summaries',
@@ -8,16 +17,16 @@ export const metadata = {
 
 export default function AboutPage() {
   const features = [
-    {
-      title: "Fast Processing",
-      description: "Get summaries in seconds, not hours. Our AI works quickly to deliver results.",
-      icon: <LightningBoltIcon className="h-6 w-6 text-indigo-600" />
-    },
-    {
-      title: "Accurate Transcripts",
-      description: "Industry-leading speech-to-text technology ensures high accuracy.",
-      icon: <SpeakerphoneIcon className="h-6 w-6 text-indigo-600" />
-    },
+  {
+    title: "Fast Processing",
+    description: "Get summaries in seconds, not hours. Our AI works quickly to deliver results.",
+    icon: <BoltIcon className="h-6 w-6 text-indigo-600" />
+  },
+  {
+    title: "Accurate Transcripts",
+    description: "Industry-leading speech-to-text technology ensures high accuracy.",
+    icon: <SpeakerWaveIcon className="h-6 w-6 text-indigo-600" />
+  },
     {
       title: "Concise Summaries",
       description: "We extract key points so you don't have to watch the whole video.",

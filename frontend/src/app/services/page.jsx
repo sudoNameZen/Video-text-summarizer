@@ -78,13 +78,13 @@ export default function ServicesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="bg-indigo-700 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Our Services
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-indigo-200">
+       <div className="bg-indigo-700 py-8 sm:py-10"> {/* Reduced padding */}
+    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-2xl text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          Our Services
+        </h1>
+            <p className="mt-6 text-lg leading-8 text-white">
               Professional video-to-text solutions tailored to your needs
             </p>
           </div>
@@ -92,10 +92,11 @@ export default function ServicesPage() {
       </div>
 
       {/* Pricing Section */}
-      <div className="py-24 sm:py-32">
+      <div className="py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+             <h2 className="text-2xl font-semibold leading-7 text-black">Pricing</h2>
+
             <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Simple, transparent pricing
             </p>
